@@ -12,11 +12,11 @@
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 53.311, 12.2888 )
 
-[sub_resource type="DynamicFont" id=4]
+[sub_resource type="DynamicFont" id=2]
 size = 18
 font_data = ExtResource( 6 )
 
-[sub_resource type="DynamicFont" id=5]
+[sub_resource type="DynamicFont" id=3]
 size = 18
 font_data = ExtResource( 6 )
 
@@ -44,7 +44,6 @@ shape = SubResource( 1 )
 polygon = PoolVector2Array( 0, 640, 0, 0, 1024, 0, 1024, 640, 1088, 640, 1088, -64, -64, -64, -64, 640, 0, 640 )
 
 [node name="Tiles" type="Node" parent="."]
-editor/display_folded = true
 
 [node name="Gray Tiles" type="Node2D" parent="Tiles"]
 editor/display_folded = true
@@ -200,7 +199,6 @@ position = Vector2( 772, 384 )
 position = Vector2( 840, 384 )
 
 [node name="Purple Tiles" type="Node2D" parent="Tiles"]
-editor/display_folded = true
 position = Vector2( 12, -240 )
 __meta__ = {
 "_edit_group_": true
@@ -282,7 +280,7 @@ margin_left = 27.0
 margin_top = 23.0
 margin_right = 67.0
 margin_bottom = 37.0
-custom_fonts/font = SubResource( 4 )
+custom_fonts/font = SubResource( 2 )
 text = "Score"
 script = ExtResource( 7 )
 
@@ -291,6 +289,6 @@ margin_left = 925.0
 margin_top = 26.0
 margin_right = 965.0
 margin_bottom = 40.0
-custom_fonts/font = SubResource( 5 )
+custom_fonts/font = SubResource( 3 )
 text = "Lives"
 script = ExtResource( 8 )
